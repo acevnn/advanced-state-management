@@ -6,6 +6,8 @@ const CartModal = forwardRef(function Modal(
   { cartItems, onUpdateCartItemQuantity, title, actions },
   ref
 ) {
+   
+   console.log('this are the cart items', cartItems);
   const dialog = useRef();
 
   useImperativeHandle(ref, () => {
